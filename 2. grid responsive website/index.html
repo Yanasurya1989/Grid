@@ -9,20 +9,79 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header>
             <div class="hero">
                 <h2 class="heading">Merch Shop</h2>
-                <p class="sub-heading">Hoodie & T-Shirt</p>
+                <p class="sub-heading">Surjan Lurik</p>
             </div>
             <div class="features feature-1">
                 <h4 class="price">IDR 250K</h4>
-                <p class="item">Hoodie</p>
+                <p class="item">Surjan</p>
             </div>
             <div class="features feature-2">
                 <h4 class="price">IDR 150K</h4>
-                <p class="item">T-Shirt</p>
+                <p class="item">Jawa</p>
             </div>
-        </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>My Burik</h1>
+            </div>
+            <ul class="menu-list">
+                <!-- membuat li didalamnya ada a sebanyak 4 kali
+                     li*4>a 
+                -->
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">S</div>
+                <h3>Tutorial</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto eveniet accusamus sunt, magnam eligendi.</p>
+            </div>
+            <div class="service">
+                <div class="icon">N</div>
+                <h3>Tutorial</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto eveniet accusamus sunt, magnam eligendi.</p>
+            </div>
+            <div class="service">
+                <div class="icon">M</div>
+                <h3>Tutorial</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto eveniet accusamus sunt, magnam eligendi.</p>
+            </div>
+            <div class="service">
+                <div class="icon">T</div>
+                <h3>Tutorial</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto eveniet accusamus sunt, magnam eligendi.</p>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <!-- img[src="https://source.unsplash.com/random/20$x20$"]*10 -->
+            <img src="https://source.unsplash.com/random/201x201" alt=""><img src="https://source.unsplash.com/random/202x202" alt=""><img src="https://source.unsplash.com/random/203x203" alt=""><img src="https://source.unsplash.com/random/204x204" alt=""><img src="https://source.unsplash.com/random/205x205" alt=""><img src="https://source.unsplash.com/random/206x206" alt=""><img src="https://source.unsplash.com/random/207x207" alt=""><img src="https://source.unsplash.com/random/208x208" alt=""><img src="https://source.unsplash.com/random/209x209" alt=""><img src="https://source.unsplash.com/random/2010x2010" alt="">
+            <img src="Https://unsplash.com/random/200x200" alt="">
+        </section>
     </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function (){
+            nav.classList.toggle('slide');
+        })
+    </script>
 </body>
 </html>
